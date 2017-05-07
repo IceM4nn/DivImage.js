@@ -1,7 +1,8 @@
-var aspectRatio = 2.80110698; // imgWidth / imgHeight.real('247.52')
 var imgWidth = $('.img-hack').parent().width();
-var imgHeight = imgWidth/aspectRatio;
+var imgHeight = imgWidth/ (imgWidth/($('.img-hack').data('height')));//aspectRatio;
 var imgHack = (imgHeight / imgWidth * 100);
 $('.img-hack').css({
-  'padding-top' : imgHack +'%'
+  'padding-top' : imgHack +'%',
+  'height' : '0',
+  'max-width' : '100%'
 });
