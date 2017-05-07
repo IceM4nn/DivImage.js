@@ -1,5 +1,5 @@
 # ImageBox
-A CSS hack to set `<div>` or other elements (such as `<figure>`) as `<img>`. Required JQuery to auto-scale image.
+A CSS hack to set `<div>` or other elements (such as `<figure>`) as `<img>`. Required JQuery.
 
 ## Getting Started
 1. Include JQuery and divimage.js to your web document.
