@@ -12,7 +12,7 @@ A CSS hack to set `<div>` or other elements (such as `<figure>`) as `<img>`. Req
 Example:
 ```
 <div class="wrapper">
-  <figure class="imgbox" data-ratio="2.7"></figure>
+  <figure class="imgbox" data-ratio="2.7" style="background-image:url('img/test.png')"></figure>
 </div>
 ```
 4. At the time being you need to calculate the `data-ratio` manually using the formula `imageWidth / imageHeight`.
