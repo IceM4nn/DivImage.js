@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Div ImgHack CSS using JQuery</title>
+
+    <!-- Make webpage pretty using bootstrap(like it!) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Initial styling -->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="img-hack" data-height="200"></div>
-    </div>
+
+  <body class="container">
+
+    <section>
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-center">With ImageBox</h2>
+          <div class="imgbox" data-ratio="2.7" style="background-image:url('img/test.png')"></div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-center">Without ImageBox</h2>
+          <img src="img/test.png" alt="without imagebox">
+          <!-- to make standard img responsive, include img-fluid class -->
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Why use ImageBox?</h1>
+      <ol>
+        <li>First, you cannot drag the image (to the url bar) because you set the background-image to the element.</li>
+        <li>It is good to hide the image so that people don't easily get the image (surely it still can be done by inspect element on your web page).</li>
+        <li>Cannot save image as..</li>
+        <li>If you inspect, you'll see the element is wrap up with padding-top</li>
+        <li>Lastly, it's responsive.</li>
+      </ol>
+    </section>
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" type="text/javascript"></script>
-    <script src="divimage.js" type="text/javascript"></script>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- imagebox.js -->
+    <script src="imagebox.js" type="text/javascript"></script>
+
   </body>
 </html>
