@@ -1,5 +1,5 @@
 # ImageBox
-A CSS hack to set `<div>` or other elements (such as `<figure>`) as `<img>`. Required JQuery.
+A CSS hack to set `<div>` or other elements (such as `<figure>`) as `<img>`. Required JQuery. Check out [demo](https://icem4nn.github.io/ImageBox/)!
 
 ## Getting Started
 1. Include JQuery and divimage.js to your web document.
